@@ -1,0 +1,850 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="have a try try">
+<meta property="og:type" content="website">
+<meta property="og:title" content="汪汪队">
+<meta property="og:url" content="http://example.com/page/12/index.html">
+<meta property="og:site_name" content="汪汪队">
+<meta property="og:description" content="have a try try">
+<meta property="og:locale">
+<meta property="article:author" content="汪汪队">
+<meta name="twitter:card" content="summary"><title>汪汪队</title><link ref="canonical" href="http://example.com/page/12/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"Copy","copySuccess":"Copy Success","copyError":"Copy Error"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Hello Stun</div><div class="header-banner-info__subtitle">An elegant theme for Hexo</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/data-urls/README/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">1985-10-26</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="Parse-data-URLs"   >
+          <a href="#Parse-data-URLs" class="heading-link"><i class="fas fa-link"></i></a><a href="#Parse-data-URLs" class="headerlink" title="Parse data: URLs"></a>Parse <code>data:</code> URLs</h1>
+      <p>This package helps you parse <code>data:</code> URLs <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://fetch.spec.whatwg.org/#data-urls" >according to the WHATWG Fetch Standard</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>:</p>
+<figure class="highlight js"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> parseDataURL = <span class="built_in">require</span>(<span class="string">&quot;data-urls&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> textExample = <span class="title function_">parseDataURL</span>(<span class="string">&quot;data:,Hello%2C%20World!&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(textExample.<span class="property">mimeType</span>.<span class="title function_">toString</span>()); <span class="comment">// &quot;text/plain;charset=US-ASCII&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(textExample.<span class="property">body</span>.<span class="title function_">toString</span>());     <span class="comment">// &quot;Hello, World!&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> htmlExample = <span class="title function_">dataURL</span>(<span class="string">&quot;data:text/html,%3Ch1%3EHello%2C%20World!%3C%2Fh1%3E&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(htmlExample.<span class="property">mimeType</span>.<span class="title function_">toString</span>()); <span class="comment">// &quot;text/html&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(htmlExample.<span class="property">body</span>.<span class="title function_">toString</span>());     <span class="comment">// &lt;h1&gt;Hello, World!&lt;/h1&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> pngExample = <span class="title function_">parseDataURL</span>(<span class="string">&quot;data:image/png;base64,iVBORw0KGgoAAA&quot;</span> +</span><br><span class="line">                                <span class="string">&quot;ANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4&quot;</span> +</span><br><span class="line">                                <span class="string">&quot;//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU&quot;</span> +</span><br><span class="line">                                <span class="string">&quot;5ErkJggg==&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(pngExample.<span class="property">mimeType</span>.<span class="title function_">toString</span>()); <span class="comment">// &quot;image/png&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(pngExample.<span class="property">body</span>);                <span class="comment">// &lt;Buffer 89 50 4e 47 0d ... &gt;</span></span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="API"   >
+          <a href="#API" class="heading-link"><i class="fas fa-link"></i></a><a href="#API" class="headerlink" title="API"></a>API</h2>
+      <p>This package’s main module’s default export is a function that accepts a string and returns a <code>&#123; mimeType, body &#125;</code> object, or <code>null</code> if the result cannot be parsed as a <code>data:</code> URL.</p>
+<ul>
+<li>The <code>mimeType</code> property is an instance of <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.npmjs.com/package/whatwg-mimetype" >whatwg-mimetype</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>‘s <code>MIMEType</code> class.</li>
+<li>The <code>body</code> property is a Node.js <a target="_blank" rel="noopener" href="https://nodejs.org/docs/latest/api/buffer.html"><code>Buffer</code></a> instance.</li>
+</ul>
+<p>As shown in the examples above, both of these have useful <code>toString()</code> methods for manipulating them as string values. However…</p>
+
+        <h3 id="A-word-of-caution-on-string-decoding"   >
+          <a href="#A-word-of-caution-on-string-decoding" class="heading-link"><i class="fas fa-link"></i></a><a href="#A-word-of-caution-on-string-decoding" class="headerlink" title="A word of caution on string decoding"></a>A word of caution on string decoding</h3>
+      <p>Because Node.js’s <code>Buffer.prototype.toString()</code> assumes a UTF-8 encoding, simply doing <code>dataURL.body.toString()</code> may not work correctly if the <code>data:</code> URL’s contents were not originally written in UTF-8. This includes if the encoding is “US-ASCII”, <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://encoding.spec.whatwg.org/#names-and-labels" >aka windows-1252</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>, which is notable for being the default in many cases.</p>
+<p>A more complete decoding example would use the <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.npmjs.com/package/whatwg-encoding" >whatwg-encoding</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> package as follows:</p>
+<figure class="highlight js"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> parseDataURL = <span class="built_in">require</span>(<span class="string">&quot;data-urls&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> &#123; labelToName, decode &#125; = <span class="built_in">require</span>(<span class="string">&quot;whatwg-encoding&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> dataURL = <span class="title function_">parseDataURL</span>(arbitraryString);</span><br><span class="line"><span class="keyword">const</span> encodingName = <span class="title function_">labelToName</span>(dataURL.<span class="property">mimeType</span>.<span class="property">parameters</span>.<span class="title function_">get</span>(<span class="string">&quot;charset&quot;</span>));</span><br><span class="line"><span class="keyword">const</span> bodyDecoded = <span class="title function_">decode</span>(dataURL.<span class="property">body</span>, encodingName);</span><br></pre></td></tr></table></div></figure>
+
+<p>For example, given an <code>arbitraryString</code> of <code>data:,Hello!</code>, this will produce a <code>bodyDecoded</code> of <code>&quot;Hello!&quot;</code>, as expected. But given an <code>arbitraryString</code> of <code>&quot;data:,Héllo!&quot;</code>, this will correctly produce a <code>bodyDecoded</code> of <code>&quot;Héllo!&quot;</code>, whereas just doing <code>dataURL.body.toString()</code> will give back <code>&quot;HÃ©llo!&quot;</code>.</p>
+<p>In summary, only use <code>dataURL.body.toString()</code> when you are very certain your data is inside the ASCII range (i.e. code points within the range U+0000 to U+007F).</p>
+
+        <h3 id="Advanced-functionality-parsing-from-a-URL-record"   >
+          <a href="#Advanced-functionality-parsing-from-a-URL-record" class="heading-link"><i class="fas fa-link"></i></a><a href="#Advanced-functionality-parsing-from-a-URL-record" class="headerlink" title="Advanced functionality: parsing from a URL record"></a>Advanced functionality: parsing from a URL record</h3>
+      <p>If you are using the <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/jsdom/whatwg-url" >whatwg-url</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> package, you may already have a “URL record” object on hand, as produced by that package’s <code>parseURL</code> export. In that case, you can use this package’s <code>fromURLRecord</code> export to save a bit of work:</p>
+<figure class="highlight js"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; parseURL &#125; = <span class="built_in">require</span>(<span class="string">&quot;whatwg-url&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> dataURLFromURLRecord = <span class="built_in">require</span>(<span class="string">&quot;data-urls&quot;</span>).<span class="property">fromURLRecord</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> urlRecord = <span class="title function_">parseURL</span>(<span class="string">&quot;data:,Hello%2C%20World!&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> dataURL = <span class="title function_">dataURLFromURLRecord</span>(urlRecord);</span><br></pre></td></tr></table></div></figure>
+
+<p>In practice, we expect this functionality only to be used by consumers like <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.npmjs.com/package/jsdom" >jsdom</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>, which are using these packages at a very low level.</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/dashdash/README/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2016-01-19</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>A light, featureful and explicit option parsing library for node.js.</p>
+<p><a href="#why">Why another one? See below</a>. tl;dr: The others I’ve tried are one of<br>too loosey goosey (not explicit), too big&#x2F;too many deps, or ill specified.<br>YMMV.</p>
+<p>Follow <span class="exturl"><a class="exturl__link"   href="https://twitter.com/intent/user?screen_name=trentmick"  target="_blank">@trentmick</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>for updates to node-dashdash.</p>
+
+        <h1 id="Install"   >
+          <a href="#Install" class="heading-link"><i class="fas fa-link"></i></a><a href="#Install" class="headerlink" title="Install"></a>Install</h1>
+      <pre><code>npm install dashdash
+</code></pre>
+
+        <h1 id="Usage"   >
+          <a href="#Usage" class="heading-link"><i class="fas fa-link"></i></a><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h1>
+      <figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dashdash = <span class="built_in">require</span>(<span class="string">&#x27;dashdash&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Specify the options. Minimally `name` (or `names`) and `type`</span></span><br><span class="line"><span class="comment">// must be given for each.</span></span><br><span class="line"><span class="keyword">var</span> options = [</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// `names` or a single `name`. First element is the `opts.KEY`.</span></span><br><span class="line">        <span class="attr">names</span>: [<span class="string">&#x27;help&#x27;</span>, <span class="string">&#x27;h&#x27;</span>],</span><br><span class="line">        <span class="comment">// See &quot;Option specs&quot; below for types.</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;bool&#x27;</span>,</span><br><span class="line">        <span class="attr">help</span>: <span class="string">&#x27;Print this help and exit.&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="comment">// Shortcut form. As called it infers `process.argv`. See below for</span></span><br><span class="line"><span class="comment">// the longer form to use methods like `.help()` on the Parser object.</span></span><br><span class="line"><span class="keyword">var</span> opts = dashdash.<span class="title function_">parse</span>(&#123;<span class="attr">options</span>: options&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;opts:&quot;</span>, opts);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;args:&quot;</span>, opts.<span class="property">_args</span>);</span><br></pre></td></tr></table></div></figure>
+
+
+
+        <h1 id="Longer-Example"   >
+          <a href="#Longer-Example" class="heading-link"><i class="fas fa-link"></i></a><a href="#Longer-Example" class="headerlink" title="Longer Example"></a>Longer Example</h1>
+      <p>A more realistic <a href="./examples/foo.js">starter script “foo.js”</a> is as follows.<br>This also shows using <code>parser.help()</code> for formatted option help.</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dashdash = <span class="built_in">require</span>(<span class="string">&#x27;./lib/dashdash&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> options = [</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&#x27;version&#x27;</span>,</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;bool&#x27;</span>,</span><br><span class="line">        <span class="attr">help</span>: <span class="string">&#x27;Print tool version and exit.&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">names</span>: [<span class="string">&#x27;help&#x27;</span>, <span class="string">&#x27;h&#x27;</span>],</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;bool&#x27;</span>,</span><br><span class="line">        <span class="attr">help</span>: <span class="string">&#x27;Print this help and exit.&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">names</span>: [<span class="string">&#x27;verbose&#x27;</span>, <span class="string">&#x27;v&#x27;</span>],</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;arrayOfBool&#x27;</span>,</span><br><span class="line">        <span class="attr">help</span>: <span class="string">&#x27;Verbose output. Use multiple times for more verbose.&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">names</span>: [<span class="string">&#x27;file&#x27;</span>, <span class="string">&#x27;f&#x27;</span>],</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;string&#x27;</span>,</span><br><span class="line">        <span class="attr">help</span>: <span class="string">&#x27;File to process&#x27;</span>,</span><br><span class="line">        <span class="attr">helpArg</span>: <span class="string">&#x27;FILE&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> parser = dashdash.<span class="title function_">createParser</span>(&#123;<span class="attr">options</span>: options&#125;);</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> opts = parser.<span class="title function_">parse</span>(process.<span class="property">argv</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;foo: error: %s&#x27;</span>, e.<span class="property">message</span>);</span><br><span class="line">    process.<span class="title function_">exit</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;# opts:&quot;</span>, opts);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;# args:&quot;</span>, opts.<span class="property">_args</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Use `parser.help()` for formatted options help.</span></span><br><span class="line"><span class="keyword">if</span> (opts.<span class="property">help</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> help = parser.<span class="title function_">help</span>(&#123;<span class="attr">includeEnv</span>: <span class="literal">true</span>&#125;).<span class="title function_">trimRight</span>();</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;usage: node foo.js [OPTIONS]\n&#x27;</span></span><br><span class="line">                + <span class="string">&#x27;options:\n&#x27;</span></span><br><span class="line">                + help);</span><br><span class="line">    process.<span class="title function_">exit</span>(<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></div></figure>
+
+
+<p>Some example output from this script (foo.js):</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">$ node foo.js -h</span><br><span class="line"># opts: &#123; help: true,</span><br><span class="line">  _order: [ &#123; name: &#x27;help&#x27;, value: true, from: &#x27;argv&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"># args: []</span><br><span class="line">usage: node foo.js [OPTIONS]</span><br><span class="line">options:</span><br><span class="line">    --version             Print tool version and exit.</span><br><span class="line">    -h, --help            Print this help and exit.</span><br><span class="line">    -v, --verbose         Verbose output. Use multiple times for more verbose.</span><br><span class="line">    -f FILE, --file=FILE  File to process</span><br><span class="line"></span><br><span class="line">$ node foo.js -v</span><br><span class="line"># opts: &#123; verbose: [ true ],</span><br><span class="line">  _order: [ &#123; name: &#x27;verbose&#x27;, value: true, from: &#x27;argv&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"># args: []</span><br><span class="line"></span><br><span class="line">$ node foo.js --version arg1</span><br><span class="line"># opts: &#123; version: true,</span><br><span class="line">  _order: [ &#123; name: &#x27;version&#x27;, value: true, from: &#x27;argv&#x27; &#125; ],</span><br><span class="line">  _args: [ &#x27;arg1&#x27; ] &#125;</span><br><span class="line"># args: [ &#x27;arg1&#x27; ]</span><br><span class="line"></span><br><span class="line">$ node foo.js -f bar.txt</span><br><span class="line"># opts: &#123; file: &#x27;bar.txt&#x27;,</span><br><span class="line">  _order: [ &#123; name: &#x27;file&#x27;, value: &#x27;bar.txt&#x27;, from: &#x27;argv&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"># args: []</span><br><span class="line"></span><br><span class="line">$ node foo.js -vvv --file=blah</span><br><span class="line"># opts: &#123; verbose: [ true, true, true ],</span><br><span class="line">  file: &#x27;blah&#x27;,</span><br><span class="line">  _order:</span><br><span class="line">   [ &#123; name: &#x27;verbose&#x27;, value: true, from: &#x27;argv&#x27; &#125;,</span><br><span class="line">     &#123; name: &#x27;verbose&#x27;, value: true, from: &#x27;argv&#x27; &#125;,</span><br><span class="line">     &#123; name: &#x27;verbose&#x27;, value: true, from: &#x27;argv&#x27; &#125;,</span><br><span class="line">     &#123; name: &#x27;file&#x27;, value: &#x27;blah&#x27;, from: &#x27;argv&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"># args: []</span><br></pre></td></tr></table></div></figure>
+
+
+<p>See the <a href="examples/">“examples”</a> dir for a number of starter examples using<br>some of dashdash’s features.</p>
+
+        <h1 id="Environment-variable-integration"   >
+          <a href="#Environment-variable-integration" class="heading-link"><i class="fas fa-link"></i></a><a href="#Environment-variable-integration" class="headerlink" title="Environment variable integration"></a>Environment variable integration</h1>
+      <p>If you want to allow environment variables to specify options to your tool,<br>dashdash makes this easy. We can change the ‘verbose’ option in the example<br>above to include an ‘env’ field:</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">names</span>: [<span class="string">&#x27;verbose&#x27;</span>, <span class="string">&#x27;v&#x27;</span>],</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;arrayOfBool&#x27;</span>,</span><br><span class="line">    <span class="attr">env</span>: <span class="string">&#x27;FOO_VERBOSE&#x27;</span>,         <span class="comment">// &lt;--- add this line</span></span><br><span class="line">    <span class="attr">help</span>: <span class="string">&#x27;Verbose output. Use multiple times for more verbose.&#x27;</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></div></figure>
+
+<p>then the <strong>“FOO_VERBOSE” environment variable</strong> can be used to set this<br>option:</p>
+<figure class="highlight shell"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">FOO_VERBOSE=1 node foo.js</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">opts: &#123; verbose: [ <span class="literal">true</span> ],</span></span><br><span class="line">  _order: [ &#123; name: &#x27;verbose&#x27;, value: true, from: &#x27;env&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">args: []</span></span><br></pre></td></tr></table></div></figure>
+
+<p>Boolean options will interpret the empty string as unset, ‘0’ as false<br>and anything else as true.</p>
+<figure class="highlight shell"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">FOO_VERBOSE= node examples/foo.js                 <span class="comment"># not set</span></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">opts: &#123; _order: [], _args: [] &#125;</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">args: []</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">FOO_VERBOSE=0 node examples/foo.js                <span class="comment"># &#x27;0&#x27; is false</span></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">opts: &#123; verbose: [ <span class="literal">false</span> ],</span></span><br><span class="line">  _order: [ &#123; key: &#x27;verbose&#x27;, value: false, from: &#x27;env&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">args: []</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">FOO_VERBOSE=1 node examples/foo.js                <span class="comment"># true</span></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">opts: &#123; verbose: [ <span class="literal">true</span> ],</span></span><br><span class="line">  _order: [ &#123; key: &#x27;verbose&#x27;, value: true, from: &#x27;env&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">args: []</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">FOO_VERBOSE=boogabooga node examples/foo.js       <span class="comment"># true</span></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">opts: &#123; verbose: [ <span class="literal">true</span> ],</span></span><br><span class="line">  _order: [ &#123; key: &#x27;verbose&#x27;, value: true, from: &#x27;env&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">args: []</span></span><br></pre></td></tr></table></div></figure>
+
+<p>Non-booleans can be used as well. Strings:</p>
+<figure class="highlight shell"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">FOO_FILE=data.txt node examples/foo.js</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">opts: &#123; file: <span class="string">&#x27;data.txt&#x27;</span>,</span></span><br><span class="line">  _order: [ &#123; key: &#x27;file&#x27;, value: &#x27;data.txt&#x27;, from: &#x27;env&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">args: []</span></span><br></pre></td></tr></table></div></figure>
+
+<p>Numbers:</p>
+<figure class="highlight shell"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">FOO_TIMEOUT=5000 node examples/foo.js</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">opts: &#123; <span class="built_in">timeout</span>: 5000,</span></span><br><span class="line">  _order: [ &#123; key: &#x27;timeout&#x27;, value: 5000, from: &#x27;env&#x27; &#125; ],</span><br><span class="line">  _args: [] &#125;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">args: []</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">FOO_TIMEOUT=blarg node examples/foo.js</span></span><br><span class="line">foo: error: arg for &quot;FOO_TIMEOUT&quot; is not a positive integer: &quot;blarg&quot;</span><br></pre></td></tr></table></div></figure>
+
+<p>With the <code>includeEnv: true</code> config to <code>parser.help()</code> the environment<br>variable can also be included in <strong>help output</strong>:</p>
+<pre><code>usage: node foo.js [OPTIONS]
+options:
+    --version             Print tool version and exit.
+    -h, --help            Print this help and exit.
+    -v, --verbose         Verbose output. Use multiple times for more verbose.
+                          Environment: FOO_VERBOSE=1
+    -f FILE, --file=FILE  File to process
+</code></pre>
+
+        <h1 id="Bash-completion"   >
+          <a href="#Bash-completion" class="heading-link"><i class="fas fa-link"></i></a><a href="#Bash-completion" class="headerlink" title="Bash completion"></a>Bash completion</h1>
+      <p>Dashdash provides a simple way to create a Bash completion file that you<br>can place in your “bash_completion.d” directory – sometimes that is<br>“&#x2F;usr&#x2F;local&#x2F;etc&#x2F;bash_completion.d&#x2F;“). Features:</p>
+<ul>
+<li>Support for short and long opts</li>
+<li>Support for knowing which options take arguments</li>
+<li>Support for subcommands (e.g. ‘git log <TAB>‘ to show just options for the<br>log subcommand). See<br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/trentm/node-cmdln#bash-completion" >node-cmdln</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for<br>how to integrate that.</li>
+<li>Does the right thing with “–” to stop options.</li>
+<li>Custom optarg and arg types for custom completions.</li>
+</ul>
+<p>Dashdash will return bash completion file content given a parser instance:</p>
+<pre><code>var parser = dashdash.createParser(&#123;options: options&#125;);
+console.log( parser.bashCompletion(&#123;name: &#39;mycli&#39;&#125;) );
+</code></pre>
+<p>or directly from a <code>options</code> array of options specs:</p>
+<pre><code>var code = dashdash.bashCompletionFromOptions(&#123;
+    name: &#39;mycli&#39;,
+    options: OPTIONS
+&#125;);
+</code></pre>
+<p>Write that content to “&#x2F;usr&#x2F;local&#x2F;etc&#x2F;bash_completion.d&#x2F;mycli” and you will<br>have Bash completions for <code>mycli</code>. Alternatively you can write it to<br>any file (e.g. “~&#x2F;.bashrc”) and source it.</p>
+<p>You could add a <code>--completion</code> hidden option to your tool that emits the<br>completion content and document for your users to call that to install<br>Bash completions.</p>
+<p>See <a href="examples/ddcompletion.js">examples&#x2F;ddcompletion.js</a> for a complete<br>example, including how one can define bash functions for completion of custom<br>option types. Also see <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/trentm/node-cmdln" >node-cmdln</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for<br>how it uses this for Bash completion for full multi-subcommand tools.</p>
+<ul>
+<li>TODO: document specExtra</li>
+<li>TODO: document includeHidden</li>
+<li>TODO: document custom types, <code>function complete\_FOO</code> guide, completionType</li>
+<li>TODO: document argtypes</li>
+</ul>
+
+        <h1 id="Parser-config"   >
+          <a href="#Parser-config" class="heading-link"><i class="fas fa-link"></i></a><a href="#Parser-config" class="headerlink" title="Parser config"></a>Parser config</h1>
+      <p>Parser construction (i.e. <code>dashdash.createParser(CONFIG)</code>) takes the<br>following fields:</p>
+<ul>
+<li><p><code>options</code> (Array of option specs). Required. See the<br><a href="#option-specs">Option specs</a> section below.</p>
+</li>
+<li><p><code>interspersed</code> (Boolean). Optional. Default is true. If true this allows<br>interspersed arguments and options. I.e.:</p>
+<pre><code>  node ./tool.js -v arg1 arg2 -h   # &#39;-h&#39; is after interspersed args
+</code></pre>
+<p>Set it to false to have ‘-h’ <strong>not</strong> get parsed as an option in the above<br>example.</p>
+</li>
+<li><p><code>allowUnknown</code> (Boolean).  Optional.  Default is false.  If false, this causes<br>unknown arguments to throw an error.  I.e.:</p>
+<pre><code>  node ./tool.js -v arg1 --afe8asefksjefhas
+</code></pre>
+<p>Set it to true to treat the unknown option as a positional<br>argument.</p>
+<p><strong>Caveat</strong>: When a shortopt group, such as <code>-xaz</code> contains a mix of<br>known and unknown options, the <em>entire</em> group is passed through<br>unmolested as a positional argument.</p>
+<p>Consider if you have a known short option <code>-a</code>, and parse the<br>following command line:</p>
+<pre><code>  node ./tool.js -xaz
+</code></pre>
+<p>where <code>-x</code> and <code>-z</code> are unknown.  There are multiple ways to<br>interpret this:</p>
+<ol>
+<li><code>-x</code> takes a value: <code>&#123;x: &#39;az&#39;&#125;</code></li>
+<li><code>-x</code> and <code>-z</code> are both booleans: <code>&#123;x:true,a:true,z:true&#125;</code></li>
+</ol>
+<p>Since dashdash does not know what <code>-x</code> and <code>-z</code> are, it can’t know<br>if you’d prefer to receive <code>&#123;a:true,_args:[&#39;-x&#39;,&#39;-z&#39;]&#125;</code> or<br><code>&#123;x:&#39;az&#39;&#125;</code>, or <code>&#123;_args:[&#39;-xaz&#39;]&#125;</code>. Leaving the positional arg unprocessed<br>is the easiest mistake for the user to recover from.</p>
+</li>
+</ul>
+
+        <h1 id="Option-specs"   >
+          <a href="#Option-specs" class="heading-link"><i class="fas fa-link"></i></a><a href="#Option-specs" class="headerlink" title="Option specs"></a>Option specs</h1>
+      <p>Example using all fields (required fields are noted):</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">names</span>: [<span class="string">&#x27;file&#x27;</span>, <span class="string">&#x27;f&#x27;</span>],       <span class="comment">// Required (one of `names` or `name`).</span></span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;string&#x27;</span>,             <span class="comment">// Required.</span></span><br><span class="line">    <span class="attr">completionType</span>: <span class="string">&#x27;filename&#x27;</span>,</span><br><span class="line">    <span class="attr">env</span>: <span class="string">&#x27;MYTOOL_FILE&#x27;</span>,</span><br><span class="line">    <span class="attr">help</span>: <span class="string">&#x27;Config file to load before running &quot;mytool&quot;&#x27;</span>,</span><br><span class="line">    <span class="attr">helpArg</span>: <span class="string">&#x27;PATH&#x27;</span>,</span><br><span class="line">    <span class="attr">helpWrap</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">default</span>: path.<span class="title function_">resolve</span>(process.<span class="property">env</span>.<span class="property">HOME</span>, <span class="string">&#x27;.mytoolrc&#x27;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+
+<p>Each option spec in the <code>options</code> array must&#x2F;can have the following fields:</p>
+<ul>
+<li><p><code>name</code> (String) or <code>names</code> (Array). Required. These give the option name<br>and aliases. The first name (if more than one given) is the key for the<br>parsed <code>opts</code> object.</p>
+</li>
+<li><p><code>type</code> (String). Required. One of:</p>
+<ul>
+<li>bool</li>
+<li>string</li>
+<li>number</li>
+<li>integer</li>
+<li>positiveInteger</li>
+<li>date (epoch seconds, e.g. 1396031701, or ISO 8601 format<br><code>YYYY-MM-DD[THH:MM:SS[.sss][Z]]</code>, e.g. “2014-03-28T18:35:01.489Z”)</li>
+<li>arrayOfBool</li>
+<li>arrayOfString</li>
+<li>arrayOfNumber</li>
+<li>arrayOfInteger</li>
+<li>arrayOfPositiveInteger</li>
+<li>arrayOfDate</li>
+</ul>
+<p>FWIW, these names attempt to match with asserts on<br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/mcavage/node-assert-plus" >assert-plus</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>.<br>You can add your own custom option types with <code>dashdash.addOptionType</code>.<br>See below.</p>
+</li>
+<li><p><code>completionType</code> (String). Optional. This is used for <a href="#bash-completion">Bash<br>completion</a> for an option argument. If not specified,<br>then the value of <code>type</code> is used. Any string may be specified, but only the<br>following values have meaning:</p>
+<ul>
+<li><code>none</code>: Provide no completions.</li>
+<li><code>file</code>: Bash’s default completion (i.e. <code>complete -o default</code>), which<br>includes filenames.</li>
+<li><em>Any string FOO for which a <code>function complete_FOO</code> Bash function is<br>defined.</em> This is for custom completions for a given tool. Typically<br>these custom functions are provided in the <code>specExtra</code> argument to<br><code>dashdash.bashCompletionFromOptions()</code>. See<br><a href="examples/ddcompletion.js">“examples&#x2F;ddcompletion.js”</a> for an example.</li>
+</ul>
+</li>
+<li><p><code>env</code> (String or Array of String). Optional. An environment variable name<br>(or names) that can be used as a fallback for this option. For example,<br>given a “foo.js” like this:</p>
+<pre><code>  var options = [&#123;names: [&#39;dry-run&#39;, &#39;n&#39;], env: &#39;FOO_DRY_RUN&#39;&#125;];
+  var opts = dashdash.parse(&#123;options: options&#125;);
+</code></pre>
+<p>Both <code>node foo.js --dry-run</code> and <code>FOO_DRY_RUN=1 node foo.js</code> would result<br>in <code>opts.dry_run = true</code>.</p>
+<p>An environment variable is only used as a fallback, i.e. it is ignored if<br>the associated option is given in <code>argv</code>.</p>
+</li>
+<li><p><code>help</code> (String). Optional. Used for <code>parser.help()</code> output.</p>
+</li>
+<li><p><code>helpArg</code> (String). Optional. Used in help output as the placeholder for<br>the option argument, e.g. the “PATH” in:</p>
+<pre><code>  ...
+  -f PATH, --file=PATH    File to process
+  ...
+</code></pre>
+</li>
+<li><p><code>helpWrap</code> (Boolean). Optional, default true. Set this to <code>false</code> to have<br>that option’s <code>help</code> <em>not</em> be text wrapped in <code>&lt;parser&gt;.help()</code> output.</p>
+</li>
+<li><p><code>default</code>. Optional. A default value used for this option, if the<br>option isn’t specified in argv.</p>
+</li>
+<li><p><code>hidden</code> (Boolean). Optional, default false. If true, help output will not<br>include this option. See also the <code>includeHidden</code> option to<br><code>bashCompletionFromOptions()</code> for <a href="#bash-completion">Bash completion</a>.</p>
+</li>
+</ul>
+
+        <h1 id="Option-group-headings"   >
+          <a href="#Option-group-headings" class="heading-link"><i class="fas fa-link"></i></a><a href="#Option-group-headings" class="headerlink" title="Option group headings"></a>Option group headings</h1>
+      <p>You can add headings between option specs in the <code>options</code> array.  To do so,<br>simply add an object with only a <code>group</code> property – the string to print as<br>the heading for the subsequent options in the array.  For example:</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> options = [</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">group</span>: <span class="string">&#x27;Armament Options&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">names</span>: [ <span class="string">&#x27;weapon&#x27;</span>, <span class="string">&#x27;w&#x27;</span> ],</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;string&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">group</span>: <span class="string">&#x27;General Options&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">names</span>: [ <span class="string">&#x27;help&#x27;</span>, <span class="string">&#x27;h&#x27;</span> ],</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;bool&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">];</span><br><span class="line">...</span><br></pre></td></tr></table></div></figure>
+
+<p>Note: You can use an empty string, <code>&#123;group: &#39;&#39;&#125;</code>, to get a blank line in help<br>output between groups of options.</p>
+
+        <h1 id="Help-config"   >
+          <a href="#Help-config" class="heading-link"><i class="fas fa-link"></i></a><a href="#Help-config" class="headerlink" title="Help config"></a>Help config</h1>
+      <p>The <code>parser.help(...)</code> function is configurable as follows:</p>
+<pre><code>    Options:
+      Armament Options:
+    ^^  -w WEAPON, --weapon=WEAPON  Weapon with which to crush. One of: |
+   /                                sword, spear, maul                  |
+  /   General Options:                                                  |
+ /      -h, --help                  Print this help and exit.           |
+/   ^^^^                            ^                                   |
+\       `-- indent                   `-- helpCol              maxCol ---&#39;
+ `-- headingIndent
+</code></pre>
+<ul>
+<li><code>indent</code> (Number or String). Default 4. Set to a number (for that many<br>spaces) or a string for the literal indent.</li>
+<li><code>headingIndent</code> (Number or String). Default half length of <code>indent</code>. Set to<br>a number (for that many spaces) or a string for the literal indent. This<br>indent applies to group heading lines, between normal option lines.</li>
+<li><code>nameSort</code> (String). Default is ‘length’. By default the names are<br>sorted to put the short opts first (i.e. ‘-h, –help’ preferred<br>to ‘–help, -h’). Set to ‘none’ to not do this sorting.</li>
+<li><code>maxCol</code> (Number). Default 80. Note that reflow is just done on whitespace<br>so a long token in the option help can overflow maxCol.</li>
+<li><code>helpCol</code> (Number). If not set a reasonable value will be determined<br>between <code>minHelpCol</code> and <code>maxHelpCol</code>.</li>
+<li><code>minHelpCol</code> (Number). Default 20.</li>
+<li><code>maxHelpCol</code> (Number). Default 40.</li>
+<li><code>helpWrap</code> (Boolean). Default true. Set to <code>false</code> to have option <code>help</code><br>strings <em>not</em> be textwrapped to the helpCol..maxCol range.</li>
+<li><code>includeEnv</code> (Boolean). Default false. If the option has associated<br>environment variables (via the <code>env</code> option spec attribute), then<br>append mentioned of those envvars to the help string.</li>
+<li><code>includeDefault</code> (Boolean). Default false. If the option has a default value<br>(via the <code>default</code> option spec attribute, or a default on the option’s type),<br>then a “Default: VALUE” string will be appended to the help string.</li>
+</ul>
+
+        <h1 id="Custom-option-types"   >
+          <a href="#Custom-option-types" class="heading-link"><i class="fas fa-link"></i></a><a href="#Custom-option-types" class="headerlink" title="Custom option types"></a>Custom option types</h1>
+      <p>Dashdash includes a good starter set of option types that it will parse for<br>you. However, you can add your own via:</p>
+<pre><code>var dashdash = require(&#39;dashdash&#39;);
+dashdash.addOptionType(&#123;
+    name: &#39;...&#39;,
+    takesArg: true,
+    helpArg: &#39;...&#39;,
+    parseArg: function (option, optstr, arg) &#123;
+        ...
+    &#125;,
+    array: false,  // optional
+    arrayFlatten: false,  // optional
+    default: ...,   // optional
+    completionType: ...  // optional
+&#125;);
+</code></pre>
+<p>For example, a simple option type that accepts ‘yes’, ‘y’, ‘no’ or ‘n’ as<br>a boolean argument would look like:</p>
+<pre><code>var dashdash = require(&#39;dashdash&#39;);
+
+function parseYesNo(option, optstr, arg) &#123;
+    var argLower = arg.toLowerCase()
+    if (~[&#39;yes&#39;, &#39;y&#39;].indexOf(argLower)) &#123;
+        return true;
+    &#125; else if (~[&#39;no&#39;, &#39;n&#39;].indexOf(argLower)) &#123;
+        return false;
+    &#125; else &#123;
+        throw new Error(format(
+            &#39;arg for &quot;%s&quot; is not &quot;yes&quot; or &quot;no&quot;: &quot;%s&quot;&#39;,
+            optstr, arg));
+    &#125;
+&#125;
+
+dashdash.addOptionType(&#123;
+    name: &#39;yesno&#39;
+    takesArg: true,
+    helpArg: &#39;&lt;yes|no&gt;&#39;,
+    parseArg: parseYesNo
+&#125;);
+
+var options = &#123;
+    &#123;names: [&#39;answer&#39;, &#39;a&#39;], type: &#39;yesno&#39;&#125;
+&#125;;
+var opts = dashdash.parse(&#123;options: options&#125;);
+</code></pre>
+<p>See “examples&#x2F;custom-option-*.js” for other examples.<br>See the <code>addOptionType</code> block comment in “lib&#x2F;dashdash.js” for more details.<br>Please let me know <a target="_blank" rel="noopener" href="https://github.com/trentm/node-dashdash/issues/new">with an<br>issue</a> if you write a<br>generally useful one.</p>
+
+        <h1 id="Why"   >
+          <a href="#Why" class="heading-link"><i class="fas fa-link"></i></a><a href="#Why" class="headerlink" title="Why"></a>Why</h1>
+      <p>Why another node.js option parsing lib?</p>
+<ul>
+<li><p><code>nopt</code> really is just for “tools like npm”. Implicit opts (e.g. ‘–no-foo’<br>works for every ‘–foo’). Can’t disable abbreviated opts. Can’t do multiple<br>usages of same opt, e.g. ‘-vvv’ (I think). Can’t do grouped short opts.</p>
+</li>
+<li><p><code>optimist</code> has surprise interpretation of options (at least to me).<br>Implicit opts mean ambiguities and poor error handling for fat-fingering.<br><code>process.exit</code> calls makes it hard to use as a libary.</p>
+</li>
+<li><p><code>optparse</code> Incomplete docs. Is this an attempted clone of Python’s <code>optparse</code>.<br>Not clear. Some divergence. <code>parser.on(&quot;name&quot;, ...)</code> API is weird.</p>
+</li>
+<li><p><code>argparse</code> Dep on underscore. No thanks just for option processing.<br><code>find lib | wc -l</code> -&gt; <code>26</code>. Overkill.<br>Argparse is a bit different anyway. Not sure I want that.</p>
+</li>
+<li><p><code>posix-getopt</code> No type validation. Though that isn’t a killer. AFAIK can’t<br>have a long opt without a short alias. I.e. no <code>getopt_long</code> semantics.<br>Also, no whizbang features like generated help output.</p>
+</li>
+<li><p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/visionmedia/commander.js" >“commander.js”</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>: I wrote<br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://trentm.com/2014/01/a-critique-of-commander-for-nodejs.html" >a critique</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>a while back. It seems fine, but last I checked had<br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/visionmedia/commander.js/pull/121" >an outstanding bug</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span><br>that would prevent me from using it.</p>
+</li>
+</ul>
+
+        <h1 id="License"   >
+          <a href="#License" class="heading-link"><i class="fas fa-link"></i></a><a href="#License" class="headerlink" title="License"></a>License</h1>
+      <p>MIT. See LICENSE.txt.</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/dashdash/CHANGES/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2016-11-23</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="node-dashdash-changelog"   >
+          <a href="#node-dashdash-changelog" class="heading-link"><i class="fas fa-link"></i></a><a href="#node-dashdash-changelog" class="headerlink" title="node-dashdash changelog"></a>node-dashdash changelog</h1>
+      
+        <h2 id="not-yet-released"   >
+          <a href="#not-yet-released" class="heading-link"><i class="fas fa-link"></i></a><a href="#not-yet-released" class="headerlink" title="not yet released"></a>not yet released</h2>
+      <p>(nothing yet)</p>
+
+        <h2 id="1-14-1"   >
+          <a href="#1-14-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-14-1" class="headerlink" title="1.14.1"></a>1.14.1</h2>
+      <ul>
+<li><p>[issue #30] Change the output used by dashdash’s Bash completion support to<br>indicate “there are no completions for this argument” to cope with different<br>sorting rules on different Bash&#x2F;platforms. For example:</p>
+<pre><code>  $ triton -v -p test2 package get &lt;TAB&gt;          # before
+  ##-no -tritonpackage- completions-##
+
+  $ triton -v -p test2 package get &lt;TAB&gt;          # after
+  ##-no-completion- -results-##
+</code></pre>
+</li>
+</ul>
+
+        <h2 id="1-14-0"   >
+          <a href="#1-14-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-14-0" class="headerlink" title="1.14.0"></a>1.14.0</h2>
+      <ul>
+<li><p>New <code>synopsisFromOpt(&lt;option spec&gt;)</code> function. This will be used by<br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/trentm/node-cmdln" >node-cmdln</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> to put together a synopsis<br>of options for a command. Some examples:</p>
+<pre><code>  &gt; synopsisFromOpt(&#123;names: [&#39;help&#39;, &#39;h&#39;], type: &#39;bool&#39;&#125;);
+  &#39;[ --help | -h ]&#39;
+  &gt; synopsisFromOpt(&#123;name: &#39;file&#39;, type: &#39;string&#39;, helpArg: &#39;FILE&#39;&#125;);
+  &#39;[ --file=FILE ]&#39;
+</code></pre>
+</li>
+</ul>
+
+        <h2 id="1-13-1"   >
+          <a href="#1-13-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-13-1" class="headerlink" title="1.13.1"></a>1.13.1</h2>
+      <ul>
+<li>[issue #20] <code>bashCompletionSpecFromOptions</code> breaks on an options array with<br>an empty-string group.</li>
+</ul>
+
+        <h2 id="1-13-0"   >
+          <a href="#1-13-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-13-0" class="headerlink" title="1.13.0"></a>1.13.0</h2>
+      <ul>
+<li><p>Update assert-plus dep to 1.x to get recent fixes (particularly for<br><code>assert.optional*</code>).</p>
+</li>
+<li><p>Drop testing (and official support in packages.json#engines) for node 0.8.x.<br>Add testing against node 5.x and 4.x with <code>make testall</code>.</p>
+</li>
+<li><p>[pull #16] Change the <code>positiveInteger</code> type to NOT accept zero (0).<br>For those who might need the old behaviour, see<br>“examples&#x2F;custom-option-intGteZero.js”.  (By Dave Pacheco.)</p>
+</li>
+</ul>
+
+        <h2 id="1-12-2"   >
+          <a href="#1-12-2" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-12-2" class="headerlink" title="1.12.2"></a>1.12.2</h2>
+      <ul>
+<li><p>Bash completion: Add <code>argtypes</code> to specify the types of positional args.<br>E.g. this would allow you to have an <code>ssh</code> command with <code>argtypes = [&#39;host&#39;, &#39;cmd&#39;]</code> for bash completion. You then have to provide Bash functions to<br>handle completing those types via the <code>specExtra</code> arg. See<br>“<a href="examples/ddcompletion.js">examples&#x2F;ddcompletion.js</a>“ for an example.</p>
+</li>
+<li><p>Bash completion: Tweak so that options or only offered as completions when<br>there is a leading ‘-‘. E.g. <code>mytool &lt;TAB&gt;</code> does NOT offer options, <code>mytool -&lt;TAB&gt;</code> <em>does</em>. Without this, a tool with options would never be able to<br>fallback to Bash’s “default” completion. For example <code>ls &lt;TAB&gt;</code> wouldn’t<br>result in filename completion. Now it will.</p>
+</li>
+<li><p>Bash completion: A workaround for not being able to explicitly have <em>no</em><br>completion results. Because dashdash’s completion uses <code>complete -o default</code>,<br>we fallback to Bash’s “default” completion (typically for filename<br>completion). Before this change, an attempt to explicitly say “there are<br>no completions that match” would unintentionally trigger filename completion.<br>Instead as a workaround we return:</p>
+<pre><code>  $ ddcompletion --none &lt;TAB&gt;         # the &#39;none&#39; argtype
+  ##-no           completions-##
+
+  $ ddcompletion                      # a custom &#39;fruit&#39; argtype
+  apple   banana  orange
+  $ ddcompletion z
+  ##-no           -fruit-         completions-##
+</code></pre>
+<p>This is a bit of a hack, but IMO a better experience than the surprise<br>of matching a local filename beginning with ‘z’, which isn’t, in this<br>case, a “fruit”.</p>
+</li>
+</ul>
+
+        <h2 id="1-12-1"   >
+          <a href="#1-12-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-12-1" class="headerlink" title="1.12.1"></a>1.12.1</h2>
+      <ul>
+<li>Bash completion: Document <code>&lt;option spec&gt;.completionType</code>. Add <code>includeHidden</code><br>option to <code>bashCompletionSpecFromOptions()</code>. Add support for dealing with<br>hidden subcmds.</li>
+</ul>
+
+        <h2 id="1-12-0"   >
+          <a href="#1-12-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-12-0" class="headerlink" title="1.12.0"></a>1.12.0</h2>
+      <ul>
+<li>Support for generating Bash completion files. See the “Bash completion”<br>section of the README.md and “examples&#x2F;ddcompletion.js” for an example.</li>
+</ul>
+
+        <h2 id="1-11-0"   >
+          <a href="#1-11-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-11-0" class="headerlink" title="1.11.0"></a>1.11.0</h2>
+      <ul>
+<li><p>Add the <code>arrayFlatten</code> boolean option to <code>dashdash.addOptionType</code> used for<br>custom option types. This allows one to create an <code>arrayOf...</code> option type<br>where each usage of the option can return multiple results. For example:</p>
+<pre><code>  node mytool.js --foo a,b --foo c
+</code></pre>
+<p>We could define an option type for <code>--foo</code> such that<br><code>opts.foo = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]</code>. See<br>“<a href="examples/custom-option-arrayOfCommaSepString.js">examples&#x2F;custom-option-arrayOfCommaSepString.js</a>“<br>for an example.</p>
+</li>
+</ul>
+
+        <h2 id="1-10-1"   >
+          <a href="#1-10-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-10-1" class="headerlink" title="1.10.1"></a>1.10.1</h2>
+      <ul>
+<li>Trim the published package to the minimal bits. Before: 24K tarball, 144K unpacked.<br>After: 12K tarball, 48K unpacked. <code>npm</code> won’t let me drop the README.md. :)</li>
+</ul>
+
+        <h2 id="1-10-0"   >
+          <a href="#1-10-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-10-0" class="headerlink" title="1.10.0"></a>1.10.0</h2>
+      <ul>
+<li>[issue #9] Support <code>includeDefault</code> in help config (similar to <code>includeEnv</code>) to have a<br>note of an option’s default value, if any, in help output.</li>
+<li>[issue #11] Fix option group breakage introduced in v1.9.0.</li>
+</ul>
+
+        <h2 id="1-9-0"   >
+          <a href="#1-9-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-9-0" class="headerlink" title="1.9.0"></a>1.9.0</h2>
+      <ul>
+<li>[issue #10] Custom option types added with <code>addOptionType</code> can specify a<br>“default” value. See “examples&#x2F;custom-option-fruit.js”.</li>
+</ul>
+
+        <h2 id="1-8-0"   >
+          <a href="#1-8-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-8-0" class="headerlink" title="1.8.0"></a>1.8.0</h2>
+      <ul>
+<li>Support <code>hidden: true</code> in an option spec to have help output exclude this<br>option.</li>
+</ul>
+
+        <h2 id="1-7-3"   >
+          <a href="#1-7-3" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-7-3" class="headerlink" title="1.7.3"></a>1.7.3</h2>
+      <ul>
+<li><p>[issue #8] Fix parsing of a short option group when one of the<br>option takes an argument. For example, consider <code>tail</code> with<br>a <code>-f</code> boolean option and a <code>-n</code> option that takes a number<br>argument. This should parse:</p>
+<pre><code>  tail -fn5
+</code></pre>
+<p>Before this change, that would not parse correctly.<br>It is suspected that this was introduced in version 1.4.0<br>(with commit 656fa8bc71c372ebddad0a7026bd71611e2ec99a).</p>
+</li>
+</ul>
+
+        <h2 id="1-7-2"   >
+          <a href="#1-7-2" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-7-2" class="headerlink" title="1.7.2"></a>1.7.2</h2>
+      <ul>
+<li><p>Known issues: #8</p>
+</li>
+<li><p>Exclude ‘tools&#x2F;‘ dir in packages published to npm.</p>
+</li>
+</ul>
+
+        <h2 id="1-7-1"   >
+          <a href="#1-7-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-7-1" class="headerlink" title="1.7.1"></a>1.7.1</h2>
+      <ul>
+<li><p>Known issues: #8</p>
+</li>
+<li><p>Support an option group <em>empty string</em> value:</p>
+<pre><code>  ...
+  &#123; group: &#39;&#39; &#125;,
+  ...
+</code></pre>
+<p>to render as a blank line in option help. This can help separate loosely<br>related sets of options without resorting to a title for option groups.</p>
+</li>
+</ul>
+
+        <h2 id="1-7-0"   >
+          <a href="#1-7-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-7-0" class="headerlink" title="1.7.0"></a>1.7.0</h2>
+      <ul>
+<li><p>Known issues: #8</p>
+</li>
+<li><p>[pull #7] Support for <code>&lt;parser&gt;.help(&#123;helpWrap: false, ...&#125;)</code> option to be able<br>to fully control the formatting for option help (by Patrick Mooney) <code>helpWrap: false</code> can also be set on individual options in the option objects, e.g.:</p>
+<pre><code>  var options = [
+      &#123;
+        names: [&#39;foo&#39;],
+        type: &#39;string&#39;,
+        helpWrap: false,
+        help: &#39;long help with\n  newlines&#39; +
+          &#39;\n  spaces\n  and such\nwill render correctly&#39;
+      &#125;,
+      ...
+  ];
+</code></pre>
+</li>
+</ul>
+
+        <h2 id="1-6-0"   >
+          <a href="#1-6-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-6-0" class="headerlink" title="1.6.0"></a>1.6.0</h2>
+      <ul>
+<li><p>Known issues: #8</p>
+</li>
+<li><p>[pull #6] Support headings between groups of options (by Joshua M. Clulow)<br>so that this code:</p>
+<pre><code>  var options = [
+      &#123; group: &#39;Armament Options&#39; &#125;,
+      &#123; names: [ &#39;weapon&#39;, &#39;w&#39; ], type: &#39;string&#39; &#125;,
+      &#123; group: &#39;General Options&#39; &#125;,
+      &#123; names: [ &#39;help&#39;, &#39;h&#39; ], type: &#39;bool&#39; &#125;
+  ];
+  ...
+</code></pre>
+<p>will give you this help output:</p>
+<pre><code>  ...
+    Armament Options:
+      -w, --weapon
+
+    General Options:
+      -h, --help
+  ...
+</code></pre>
+</li>
+</ul>
+
+        <h2 id="1-5-0"   >
+          <a href="#1-5-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-5-0" class="headerlink" title="1.5.0"></a>1.5.0</h2>
+      <ul>
+<li><p>Known issues: #8</p>
+</li>
+<li><p>Add support for adding custom option types. “examples&#x2F;custom-option-duration.js”<br>shows an example adding a “duration” option type.</p>
+<pre><code>  $ node custom-option-duration.js -t 1h
+  duration: 3600000 ms
+  $ node custom-option-duration.js -t 1s
+  duration: 1000 ms
+  $ node custom-option-duration.js -t 5d
+  duration: 432000000 ms
+  $ node custom-option-duration.js -t bogus
+  custom-option-duration.js: error: arg for &quot;-t&quot; is not a valid duration: &quot;bogus&quot;
+</code></pre>
+<p>A custom option type is added via:</p>
+<pre><code>  var dashdash = require(&#39;dashdash&#39;);
+  dashdash.addOptionType(&#123;
+      name: &#39;...&#39;,
+      takesArg: true,
+      helpArg: &#39;...&#39;,
+      parseArg: function (option, optstr, arg) &#123;
+          ...
+      &#125;
+  &#125;);
+</code></pre>
+</li>
+<li><p>[issue #4] Add <code>date</code> and <code>arrayOfDate</code> option types. They accept these date<br>formats: epoch second times (e.g. 1396031701) and ISO 8601 format:<br><code>YYYY-MM-DD[THH:MM:SS[.sss][Z]]</code> (e.g. “2014-03-28”,<br>“2014-03-28T18:35:01.489Z”). See “examples&#x2F;date.js” for an example usage.</p>
+<pre><code>  $ node examples/date.js -s 2014-01-01 -e $(date +%s)
+  start at 2014-01-01T00:00:00.000Z
+  end at 2014-03-29T04:26:18.000Z
+</code></pre>
+</li>
+</ul>
+
+        <h2 id="1-4-0"   >
+          <a href="#1-4-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-4-0" class="headerlink" title="1.4.0"></a>1.4.0</h2>
+      <ul>
+<li><p>Known issues: #8</p>
+</li>
+<li><p>[pull #2, pull #3] Add a <code>allowUnknown: true</code> option on <code>createParser</code> to<br>allow unknown options to be passed through as <code>opts._args</code> instead of parsing<br>throwing an exception (by <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/isaacs" >https://github.com/isaacs</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>).</p>
+<p>See ‘allowUnknown’ in the README for a subtle caveat.</p>
+</li>
+</ul>
+
+        <h2 id="1-3-2"   >
+          <a href="#1-3-2" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-3-2" class="headerlink" title="1.3.2"></a>1.3.2</h2>
+      <ul>
+<li><p>Fix a subtlety where a <em>bool</em> option using both <code>env</code> and <code>default</code> didn’t<br>work exactly correctly. If <code>default: false</code> then all was fine (by luck).<br>However, if you had an option like this:</p>
+<pre><code>  options: [ &#123;
+      names: [&#39;verbose&#39;, &#39;v&#39;],
+      env: &#39;FOO_VERBOSE&#39;,
+      &#39;default&#39;: true,    // &lt;--- this
+      type: &#39;bool&#39;
+  &#125; ],
+</code></pre>
+<p>wanted <code>FOO_VERBOSE=0</code> to make the option false, then you need the fix<br>in this version of dashdash.</p>
+</li>
+</ul>
+
+        <h2 id="1-3-1"   >
+          <a href="#1-3-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-3-1" class="headerlink" title="1.3.1"></a>1.3.1</h2>
+      <ul>
+<li><p>[issue #1] Fix an envvar not winning over an option ‘default’. Previously<br>an option with both <code>default</code> and <code>env</code> would never take a value from the<br>environment variable. E.g. <code>FOO_FILE</code> would never work here:</p>
+<pre><code>  options: [ &#123;
+      names: [&#39;file&#39;, &#39;f&#39;],
+      env: &#39;FOO_FILE&#39;,
+      &#39;default&#39;: &#39;default.file&#39;,
+      type: &#39;string&#39;
+  &#125; ],
+</code></pre>
+</li>
+</ul>
+
+        <h2 id="1-3-0"   >
+          <a href="#1-3-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-3-0" class="headerlink" title="1.3.0"></a>1.3.0</h2>
+      <ul>
+<li><p>[Backward incompatible change for boolean envvars] Change the<br>interpretation of environment variables for boolean options to consider ‘0’<br>to be false. Previous to this <em>any</em> value to the envvar was considered<br>true – which was quite misleading. Example:</p>
+<pre><code>  $ FOO_VERBOSE=0 node examples/foo.js
+  # opts: &#123; verbose: [ false ],
+    _order: [ &#123; key: &#39;verbose&#39;, value: false, from: &#39;env&#39; &#125; ],
+    _args: [] &#125;
+  # args: []
+</code></pre>
+</li>
+</ul>
+
+        <h2 id="1-2-1"   >
+          <a href="#1-2-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-2-1" class="headerlink" title="1.2.1"></a>1.2.1</h2>
+      <ul>
+<li><p>Fix for <code>parse.help(&#123;includeEnv: true, ...&#125;)</code> handling to ensure that an<br>option with an <code>env</code> <strong>but no <code>help</code></strong> still has the “Environment: …”<br>output. E.g.:</p>
+<pre><code>  &#123; names: [&#39;foo&#39;], type: &#39;string&#39;, env: &#39;FOO&#39; &#125;
+
+  ...
+
+  --foo=ARG      Environment: FOO=ARG
+</code></pre>
+</li>
+</ul>
+
+        <h2 id="1-2-0"   >
+          <a href="#1-2-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-2-0" class="headerlink" title="1.2.0"></a>1.2.0</h2>
+      <ul>
+<li>Transform the option key on the <code>opts</code> object returned from<br><code>&lt;parser&gt;.parse()</code> for convenience. Currently this is just<br><code>s/-/_/g</code>, e.g. ‘–dry-run’ -&gt; <code>opts.dry_run</code>. This allow one to use hyphen<br>in option names (common) but not have to do silly things like<br><code>opt[&quot;dry-run&quot;]</code> to access the parsed results.</li>
+</ul>
+
+        <h2 id="1-1-0"   >
+          <a href="#1-1-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-1-0" class="headerlink" title="1.1.0"></a>1.1.0</h2>
+      <ul>
+<li><p>Environment variable integration. Envvars can be associated with an option,<br>then option processing will fallback to using that envvar if defined and<br>if the option isn’t specified in argv. See the “Environment variable<br>integration” section in the README.</p>
+</li>
+<li><p>Change the <code>&lt;parser&gt;.parse()</code> signature to take a single object with keys<br>for arguments. The old signature is still supported.</p>
+</li>
+<li><p><code>dashdash.createParser(CONFIG)</code> alternative to <code>new dashdash.Parser(CONFIG)</code><br>a la many node-land APIs.</p>
+</li>
+</ul>
+
+        <h2 id="1-0-2"   >
+          <a href="#1-0-2" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-0-2" class="headerlink" title="1.0.2"></a>1.0.2</h2>
+      <ul>
+<li><p>Add “positiveInteger” and “arrayOfPositiveInteger” option types that only<br>accept positive integers.</p>
+</li>
+<li><p>Add “integer” and “arrayOfInteger” option types that accepts only integers.<br>Note that, for better or worse, these do NOT accept: “0x42” (hex), “1e2”<br>(with exponent) or “1.”, “3.0” (floats).</p>
+</li>
+</ul>
+
+        <h2 id="1-0-1"   >
+          <a href="#1-0-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-0-1" class="headerlink" title="1.0.1"></a>1.0.1</h2>
+      <ul>
+<li>Fix not modifying the given option spec objects (which breaks creating<br>a Parser with them more than once).</li>
+</ul>
+
+        <h2 id="1-0-0"   >
+          <a href="#1-0-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-0-0" class="headerlink" title="1.0.0"></a>1.0.0</h2>
+      <p>First release.</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/cssstyle/README/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">1985-10-26</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="CSSStyleDeclaration"   >
+          <a href="#CSSStyleDeclaration" class="heading-link"><i class="fas fa-link"></i></a><a href="#CSSStyleDeclaration" class="headerlink" title="CSSStyleDeclaration"></a>CSSStyleDeclaration</h1>
+      <p>A Node JS implementation of the CSS Object Model <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.w3.org/TR/cssom-1/#the-cssstyledeclaration-interface" >CSSStyleDeclaration interface</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>.</p>
+<p><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/cssstyle"><img src="https://img.shields.io/npm/v/cssstyle.svg" alt="NpmVersion"></a> <a target="_blank" rel="noopener" href="https://travis-ci.org/jsdom/cssstyle"><img   src="https://travis-ci.org/jsdom/cssstyle.svg?branch=master" style=""  alt="Build Status"></a> <a target="_blank" rel="noopener" href="https://codecov.io/gh/jsdom/cssstyle"><img src="https://codecov.io/gh/jsdom/cssstyle/branch/master/graph/badge.svg" alt="codecov"></a></p>
+<hr>
+
+        <h4 id="Background"   >
+          <a href="#Background" class="heading-link"><i class="fas fa-link"></i></a><a href="#Background" class="headerlink" title="Background"></a>Background</h4>
+      <p>This package is an extension of the CSSStyleDeclaration class in Nikita Vasilyev’s <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/NV/CSSOM" >CSSOM</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> with added support for CSS 2 &amp; 3 properties. The primary use case is for testing browser code in a Node environment. </p>
+<p>It was originally created by Chad Walker, it is now maintaind by Jon Sakas and other open source contributors.</p>
+<p>Bug reports and pull requests are welcome.</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/core-util-is/README/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2015-11-20</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="core-util-is"   >
+          <a href="#core-util-is" class="heading-link"><i class="fas fa-link"></i></a><a href="#core-util-is" class="headerlink" title="core-util-is"></a>core-util-is</h1>
+      <p>The <code>util.is*</code> functions introduced in Node v0.12.</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/combined-stream/Readme/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">1985-10-26</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="combined-stream"   >
+          <a href="#combined-stream" class="heading-link"><i class="fas fa-link"></i></a><a href="#combined-stream" class="headerlink" title="combined-stream"></a>combined-stream</h1>
+      <p>A stream that emits multiple other streams one after another.</p>
+<p><strong>NB</strong> Currently <code>combined-stream</code> works with streams version 1 only. There is ongoing effort to switch this library to streams version 2. Any help is welcome. :) Meanwhile you can explore other libraries that provide streams2 support with more or less compatibility with <code>combined-stream</code>.</p>
+<ul>
+<li><p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.npmjs.com/package/combined-stream2" >combined-stream2</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>: A drop-in streams2-compatible replacement for the combined-stream module.</p>
+</li>
+<li><p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.npmjs.com/package/multistream" >multistream</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>: A stream that emits multiple other streams one after another.</p>
+</li>
+</ul>
+
+        <h2 id="Installation"   >
+          <a href="#Installation" class="heading-link"><i class="fas fa-link"></i></a><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2>
+      <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install combined-stream</span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="Usage"   >
+          <a href="#Usage" class="heading-link"><i class="fas fa-link"></i></a><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2>
+      <p>Here is a simple example that shows how you can use combined-stream to combine<br>two files into one:</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="title class_">CombinedStream</span> = <span class="built_in">require</span>(<span class="string">&#x27;combined-stream&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> combinedStream = <span class="title class_">CombinedStream</span>.<span class="title function_">create</span>();</span><br><span class="line">combinedStream.<span class="title function_">append</span>(fs.<span class="title function_">createReadStream</span>(<span class="string">&#x27;file1.txt&#x27;</span>));</span><br><span class="line">combinedStream.<span class="title function_">append</span>(fs.<span class="title function_">createReadStream</span>(<span class="string">&#x27;file2.txt&#x27;</span>));</span><br><span class="line"></span><br><span class="line">combinedStream.<span class="title function_">pipe</span>(fs.<span class="title function_">createWriteStream</span>(<span class="string">&#x27;combined.txt&#x27;</span>));</span><br></pre></td></tr></table></div></figure>
+
+<p>While the example above works great, it will pause all source streams until<br>they are needed. If you don’t want that to happen, you can set <code>pauseStreams</code><br>to <code>false</code>:</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="title class_">CombinedStream</span> = <span class="built_in">require</span>(<span class="string">&#x27;combined-stream&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> combinedStream = <span class="title class_">CombinedStream</span>.<span class="title function_">create</span>(&#123;<span class="attr">pauseStreams</span>: <span class="literal">false</span>&#125;);</span><br><span class="line">combinedStream.<span class="title function_">append</span>(fs.<span class="title function_">createReadStream</span>(<span class="string">&#x27;file1.txt&#x27;</span>));</span><br><span class="line">combinedStream.<span class="title function_">append</span>(fs.<span class="title function_">createReadStream</span>(<span class="string">&#x27;file2.txt&#x27;</span>));</span><br><span class="line"></span><br><span class="line">combinedStream.<span class="title function_">pipe</span>(fs.<span class="title function_">createWriteStream</span>(<span class="string">&#x27;combined.txt&#x27;</span>));</span><br></pre></td></tr></table></div></figure>
+
+<p>However, what if you don’t have all the source streams yet, or you don’t want<br>to allocate the resources (file descriptors, memory, etc.) for them right away?<br>Well, in that case you can simply provide a callback that supplies the stream<br>by calling a <code>next()</code> function:</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="title class_">CombinedStream</span> = <span class="built_in">require</span>(<span class="string">&#x27;combined-stream&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> combinedStream = <span class="title class_">CombinedStream</span>.<span class="title function_">create</span>();</span><br><span class="line">combinedStream.<span class="title function_">append</span>(<span class="keyword">function</span>(<span class="params">next</span>) &#123;</span><br><span class="line">  <span class="title function_">next</span>(fs.<span class="title function_">createReadStream</span>(<span class="string">&#x27;file1.txt&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line">combinedStream.<span class="title function_">append</span>(<span class="keyword">function</span>(<span class="params">next</span>) &#123;</span><br><span class="line">  <span class="title function_">next</span>(fs.<span class="title function_">createReadStream</span>(<span class="string">&#x27;file2.txt&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">combinedStream.<span class="title function_">pipe</span>(fs.<span class="title function_">createWriteStream</span>(<span class="string">&#x27;combined.txt&#x27;</span>));</span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="API"   >
+          <a href="#API" class="heading-link"><i class="fas fa-link"></i></a><a href="#API" class="headerlink" title="API"></a>API</h2>
+      
+        <h3 id="CombinedStream-create-options"   >
+          <a href="#CombinedStream-create-options" class="heading-link"><i class="fas fa-link"></i></a><a href="#CombinedStream-create-options" class="headerlink" title="CombinedStream.create([options])"></a>CombinedStream.create([options])</h3>
+      <p>Returns a new combined stream object. Available options are:</p>
+<ul>
+<li><code>maxDataSize</code></li>
+<li><code>pauseStreams</code></li>
+</ul>
+<p>The effect of those options is described below.</p>
+
+        <h3 id="combinedStream-pauseStreams-x3D-true"   >
+          <a href="#combinedStream-pauseStreams-x3D-true" class="heading-link"><i class="fas fa-link"></i></a><a href="#combinedStream-pauseStreams-x3D-true" class="headerlink" title="combinedStream.pauseStreams &#x3D; true"></a>combinedStream.pauseStreams &#x3D; <code>true</code></h3>
+      <p>Whether to apply back pressure to the underlaying streams. If set to <code>false</code>,<br>the underlaying streams will never be paused. If set to <code>true</code>, the<br>underlaying streams will be paused right after being appended, as well as when<br><code>delayedStream.pipe()</code> wants to throttle.</p>
+
+        <h3 id="combinedStream-maxDataSize-x3D-2-1024-1024"   >
+          <a href="#combinedStream-maxDataSize-x3D-2-1024-1024" class="heading-link"><i class="fas fa-link"></i></a><a href="#combinedStream-maxDataSize-x3D-2-1024-1024" class="headerlink" title="combinedStream.maxDataSize &#x3D; 2 * 1024 * 1024"></a>combinedStream.maxDataSize &#x3D; <code>2 * 1024 * 1024</code></h3>
+      <p>The maximum amount of bytes (or characters) to buffer for all source streams.<br>If this value is exceeded, <code>combinedStream</code> emits an <code>&#39;error&#39;</code> event.</p>
+
+        <h3 id="combinedStream-dataSize-x3D-0"   >
+          <a href="#combinedStream-dataSize-x3D-0" class="heading-link"><i class="fas fa-link"></i></a><a href="#combinedStream-dataSize-x3D-0" class="headerlink" title="combinedStream.dataSize &#x3D; 0"></a>combinedStream.dataSize &#x3D; <code>0</code></h3>
+      <p>The amount of bytes (or characters) currently buffered by <code>combinedStream</code>.</p>
+
+        <h3 id="combinedStream-append-stream"   >
+          <a href="#combinedStream-append-stream" class="heading-link"><i class="fas fa-link"></i></a><a href="#combinedStream-append-stream" class="headerlink" title="combinedStream.append(stream)"></a>combinedStream.append(stream)</h3>
+      <p>Appends the given <code>stream</code> to the combinedStream object. If <code>pauseStreams</code> is<br>set to &#96;true, this stream will also be paused right away.</p>
+<p><code>streams</code> can also be a function that takes one parameter called <code>next</code>. <code>next</code><br>is a function that must be invoked in order to provide the <code>next</code> stream, see<br>example above.</p>
+<p>Regardless of how the <code>stream</code> is appended, combined-stream always attaches an<br><code>&#39;error&#39;</code> listener to it, so you don’t have to do that manually.</p>
+<p>Special case: <code>stream</code> can also be a String or Buffer.</p>
+
+        <h3 id="combinedStream-write-data"   >
+          <a href="#combinedStream-write-data" class="heading-link"><i class="fas fa-link"></i></a><a href="#combinedStream-write-data" class="headerlink" title="combinedStream.write(data)"></a>combinedStream.write(data)</h3>
+      <p>You should not call this, <code>combinedStream</code> takes care of piping the appended<br>streams into itself for you.</p>
+
+        <h3 id="combinedStream-resume"   >
+          <a href="#combinedStream-resume" class="heading-link"><i class="fas fa-link"></i></a><a href="#combinedStream-resume" class="headerlink" title="combinedStream.resume()"></a>combinedStream.resume()</h3>
+      <p>Causes <code>combinedStream</code> to start drain the streams it manages. The function is<br>idempotent, and also emits a <code>&#39;resume&#39;</code> event each time which usually goes to<br>the stream that is currently being drained.</p>
+
+        <h3 id="combinedStream-pause"   >
+          <a href="#combinedStream-pause" class="heading-link"><i class="fas fa-link"></i></a><a href="#combinedStream-pause" class="headerlink" title="combinedStream.pause();"></a>combinedStream.pause();</h3>
+      <p>If <code>combinedStream.pauseStreams</code> is set to <code>false</code>, this does nothing.<br>Otherwise a <code>&#39;pause&#39;</code> event is emitted, this goes to the stream that is<br>currently being drained, so you can use it to apply back pressure.</p>
+
+        <h3 id="combinedStream-end"   >
+          <a href="#combinedStream-end" class="heading-link"><i class="fas fa-link"></i></a><a href="#combinedStream-end" class="headerlink" title="combinedStream.end();"></a>combinedStream.end();</h3>
+      <p>Sets <code>combinedStream.writable</code> to false, emits an <code>&#39;end&#39;</code> event, and removes<br>all streams from the queue.</p>
+
+        <h3 id="combinedStream-destroy"   >
+          <a href="#combinedStream-destroy" class="heading-link"><i class="fas fa-link"></i></a><a href="#combinedStream-destroy" class="headerlink" title="combinedStream.destroy();"></a>combinedStream.destroy();</h3>
+      <p>Same as <code>combinedStream.end()</code>, except it emits a <code>&#39;close&#39;</code> event instead of<br><code>&#39;end&#39;</code>.</p>
+
+        <h2 id="License"   >
+          <a href="#License" class="heading-link"><i class="fas fa-link"></i></a><a href="#License" class="headerlink" title="License"></a>License</h2>
+      <p>combined-stream is licensed under the MIT license.</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/caseless/README/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2014-10-30</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h2 id="Caseless-–-wrap-an-object-to-set-and-get-property-with-caseless-semantics-but-also-preserve-caseing"   >
+          <a href="#Caseless-–-wrap-an-object-to-set-and-get-property-with-caseless-semantics-but-also-preserve-caseing" class="heading-link"><i class="fas fa-link"></i></a><a href="#Caseless-–-wrap-an-object-to-set-and-get-property-with-caseless-semantics-but-also-preserve-caseing" class="headerlink" title="Caseless – wrap an object to set and get property with caseless semantics but also preserve caseing."></a>Caseless – wrap an object to set and get property with caseless semantics but also preserve caseing.</h2>
+      <p>This library is incredibly useful when working with HTTP headers. It allows you to get&#x2F;set&#x2F;check for headers in a caseless manner while also preserving the caseing of headers the first time they are set.</p>
+
+        <h2 id="Usage"   >
+          <a href="#Usage" class="heading-link"><i class="fas fa-link"></i></a><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2>
+      <figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> headers = &#123;&#125;</span><br><span class="line">  , c = <span class="title function_">caseless</span>(headers)</span><br><span class="line">  ;</span><br><span class="line">c.<span class="title function_">set</span>(<span class="string">&#x27;a-Header&#x27;</span>, <span class="string">&#x27;asdf&#x27;</span>)</span><br><span class="line">c.<span class="title function_">get</span>(<span class="string">&#x27;a-header&#x27;</span>) === <span class="string">&#x27;asdf&#x27;</span></span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="has-key"   >
+          <a href="#has-key" class="heading-link"><i class="fas fa-link"></i></a><a href="#has-key" class="headerlink" title="has(key)"></a>has(key)</h2>
+      <p>Has takes a name and if it finds a matching header will return that header name with the preserved caseing it was set with.</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c.<span class="title function_">has</span>(<span class="string">&#x27;a-header&#x27;</span>) === <span class="string">&#x27;a-Header&#x27;</span></span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="set-key-value-clobber-x3D-true"   >
+          <a href="#set-key-value-clobber-x3D-true" class="heading-link"><i class="fas fa-link"></i></a><a href="#set-key-value-clobber-x3D-true" class="headerlink" title="set(key, value[, clobber&#x3D;true])"></a>set(key, value[, clobber&#x3D;true])</h2>
+      <p>Set is fairly straight forward except that if the header exists and clobber is disabled it will add <code>&#39;,&#39;+value</code> to the existing header.</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">c.<span class="title function_">set</span>(<span class="string">&#x27;a-Header&#x27;</span>, <span class="string">&#x27;fdas&#x27;</span>)</span><br><span class="line">c.<span class="title function_">set</span>(<span class="string">&#x27;a-HEADER&#x27;</span>, <span class="string">&#x27;more&#x27;</span>, <span class="literal">false</span>)</span><br><span class="line">c.<span class="title function_">get</span>(<span class="string">&#x27;a-header&#x27;</span>) === <span class="string">&#x27;fdsa,more&#x27;</span></span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="swap-key"   >
+          <a href="#swap-key" class="heading-link"><i class="fas fa-link"></i></a><a href="#swap-key" class="headerlink" title="swap(key)"></a>swap(key)</h2>
+      <p>Swaps the casing of a header with the new one that is passed in.</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> headers = &#123;&#125;</span><br><span class="line">  , c = <span class="title function_">caseless</span>(headers)</span><br><span class="line">  ;</span><br><span class="line">c.<span class="title function_">set</span>(<span class="string">&#x27;a-Header&#x27;</span>, <span class="string">&#x27;fdas&#x27;</span>)</span><br><span class="line">c.<span class="title function_">swap</span>(<span class="string">&#x27;a-HEADER&#x27;</span>)</span><br><span class="line">c.<span class="title function_">has</span>(<span class="string">&#x27;a-header&#x27;</span>) === <span class="string">&#x27;a-HEADER&#x27;</span></span><br><span class="line">headers === &#123;<span class="string">&#x27;a-HEADER&#x27;</span>: <span class="string">&#x27;fdas&#x27;</span>&#125;</span><br></pre></td></tr></table></div></figure>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/browser-process-hrtime/README/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">1985-10-26</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="browser-process-hrtime"   >
+          <a href="#browser-process-hrtime" class="heading-link"><i class="fas fa-link"></i></a><a href="#browser-process-hrtime" class="headerlink" title="browser-process-hrtime"></a>browser-process-hrtime</h1>
+      <p>Browser shim for Node.js <code>process.hrtime()</code>.<br>See <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://nodejs.org/api/process.html#process_process_hrtime" >documentation at nodejs.org</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<p>This module does not provide the same level of time precision as node.js, but provides a matching API and response format.</p>
+
+        <h3 id="usage"   >
+          <a href="#usage" class="heading-link"><i class="fas fa-link"></i></a><a href="#usage" class="headerlink" title="usage"></a>usage</h3>
+      <p>Use hrtime independent of environment (node or browser).<br>It will use <code>process.hrtime</code> first and fallback if not present.</p>
+<figure class="highlight js"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> hrtime = <span class="built_in">require</span>(<span class="string">&#x27;browser-process-hrtime&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> start = <span class="title function_">hrtime</span>()</span><br><span class="line"><span class="comment">// ...</span></span><br><span class="line"><span class="keyword">const</span> delta = <span class="title function_">hrtime</span>(start)</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="monkey-patching"   >
+          <a href="#monkey-patching" class="heading-link"><i class="fas fa-link"></i></a><a href="#monkey-patching" class="headerlink" title="monkey-patching"></a>monkey-patching</h3>
+      <p>You can monkey-patch <code>process.hrtime</code> for your dependency graph like this:</p>
+<figure class="highlight js"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">process.<span class="property">hrtime</span> = <span class="built_in">require</span>(<span class="string">&#x27;browser-process-hrtime&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> coolTool = <span class="built_in">require</span>(<span class="string">&#x27;module-that-uses-hrtime-somewhere-in-its-depths&#x27;</span>)</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="note"   >
+          <a href="#note" class="heading-link"><i class="fas fa-link"></i></a><a href="#note" class="headerlink" title="note"></a>note</h3>
+      <p>This was originally pull-requested against <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/defunctzombie/node-process" >node-process</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>,<br>but they are trying to stay lean.</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/bcrypt-pbkdf/README/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2018-06-29</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>Port of the OpenBSD <code>bcrypt_pbkdf</code> function to pure Javascript. <code>npm</code>-ified<br>version of <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/devi/tmp/blob/master/js/bcrypt_pbkdf.js" >Devi Mandiri’s port</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>,<br>with some minor performance improvements. The code is copied verbatim (and<br>un-styled) from Devi’s work.</p>
+<p>This product includes software developed by Niels Provos.</p>
+
+        <h2 id="API"   >
+          <a href="#API" class="heading-link"><i class="fas fa-link"></i></a><a href="#API" class="headerlink" title="API"></a>API</h2>
+      
+        <h3 id="bcrypt-pbkdf-pbkdf-pass-passlen-salt-saltlen-key-keylen-rounds"   >
+          <a href="#bcrypt-pbkdf-pbkdf-pass-passlen-salt-saltlen-key-keylen-rounds" class="heading-link"><i class="fas fa-link"></i></a><a href="#bcrypt-pbkdf-pbkdf-pass-passlen-salt-saltlen-key-keylen-rounds" class="headerlink" title="bcrypt_pbkdf.pbkdf(pass, passlen, salt, saltlen, key, keylen, rounds)"></a><code>bcrypt_pbkdf.pbkdf(pass, passlen, salt, saltlen, key, keylen, rounds)</code></h3>
+      <p>Derive a cryptographic key of arbitrary length from a given password and salt,<br>using the OpenBSD <code>bcrypt_pbkdf</code> function. This is a combination of Blowfish and<br>SHA-512.</p>
+<p>See <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://www.tedunangst.com/flak/post/bcrypt-pbkdf" >this article</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for<br>further information.</p>
+<p>Parameters:</p>
+<ul>
+<li><code>pass</code>, a Uint8Array of length <code>passlen</code></li>
+<li><code>passlen</code>, an integer Number</li>
+<li><code>salt</code>, a Uint8Array of length <code>saltlen</code></li>
+<li><code>saltlen</code>, an integer Number</li>
+<li><code>key</code>, a Uint8Array of length <code>keylen</code>, will be filled with output</li>
+<li><code>keylen</code>, an integer Number</li>
+<li><code>rounds</code>, an integer Number, number of rounds of the PBKDF to run</li>
+</ul>
+
+        <h3 id="bcrypt-pbkdf-hash-sha2pass-sha2salt-out"   >
+          <a href="#bcrypt-pbkdf-hash-sha2pass-sha2salt-out" class="heading-link"><i class="fas fa-link"></i></a><a href="#bcrypt-pbkdf-hash-sha2pass-sha2salt-out" class="headerlink" title="bcrypt_pbkdf.hash(sha2pass, sha2salt, out)"></a><code>bcrypt_pbkdf.hash(sha2pass, sha2salt, out)</code></h3>
+      <p>Calculate a Blowfish hash, given SHA2-512 output of a password and salt. Used as<br>part of the inner round function in the PBKDF.</p>
+<p>Parameters:</p>
+<ul>
+<li><code>sha2pass</code>, a Uint8Array of length 64</li>
+<li><code>sha2salt</code>, a Uint8Array of length 64</li>
+<li><code>out</code>, a Uint8Array of length 32, will be filled with output</li>
+</ul>
+
+        <h2 id="License"   >
+          <a href="#License" class="heading-link"><i class="fas fa-link"></i></a><a href="#License" class="headerlink" title="License"></a>License</h2>
+      <p>This source form is a 1:1 port from the OpenBSD <code>blowfish.c</code> and <code>bcrypt_pbkdf.c</code>.<br>As a result, it retains the original copyright and license. The two files are<br>under slightly different (but compatible) licenses, and are here combined in<br>one file. For each of the full license texts see <code>LICENSE</code>.</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2023/03/24/02_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/01_%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-demo/node_modules/bcrypt-pbkdf/CONTRIBUTING/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2018-06-29</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="Contributing"   >
+          <a href="#Contributing" class="heading-link"><i class="fas fa-link"></i></a><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h1>
+      <p>This repository uses <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://cr.joyent.us/" >cr.joyent.us</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> (Gerrit) for new<br>changes. Anyone can submit changes. To get started, see the <a target="_blank" rel="noopener" href="https://github.com/joyent/joyent-gerrit/blob/master/docs/user/README.md">cr.joyent.us user<br>guide</a>.<br>This repo does not use GitHub pull requests.</p>
+<p>See the <a target="_blank" rel="noopener" href="https://github.com/joyent/eng/blob/master/docs/index.md">Joyent Engineering<br>Guidelines</a> for general<br>best practices expected in this repository.</p>
+<p>If you’re changing something non-trivial or user-facing, you may want to submit<br>an issue first.</p>
+</div></div></article></section><nav class="paginator"><div class="paginator-inner"><a class="extend prev" rel="prev" href="/page/11/"><i class="fas fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/13/"><i class="fas fa-angle-right"></i></a></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/cat.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Hello Stun</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">144</div><div class="sidebar-ov-state-item__name">Archives</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2023</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>汪汪队</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v6.3.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script></body></html>
