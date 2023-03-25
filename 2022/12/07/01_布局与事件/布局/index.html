@@ -1,9 +1,11 @@
-<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="布局                           1. 盒模型宽度的计算        普通盒模型  默认盒子属性：box-sizing: content-box;  offsetWidth &#x3D; (width + padding + border)    不算margin    怪异盒模型  设置语句：box-sizing: border-">
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) {
+  window.location.href = 'https://support.dmeng.net/upgrade-your-browser.html';
+}</script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#54bcff"><link rel="manifest" href="/manifest.json?v=2.8.0"><link rel="icon" href="/images/icons/cat.jpg?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/cat.jpg?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="布局                           1. 盒模型宽度的计算        普通盒模型  默认盒子属性：box-sizing: content-box;  offsetWidth &#x3D; (width + padding + border)    不算margin                    怪异盒模型  设置语句：box">
 <meta property="og:type" content="article">
 <meta property="og:title" content="布局">
 <meta property="og:url" content="http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/index.html">
 <meta property="og:site_name" content="汪汪队">
-<meta property="og:description" content="布局                           1. 盒模型宽度的计算        普通盒模型  默认盒子属性：box-sizing: content-box;  offsetWidth &#x3D; (width + padding + border)    不算margin    怪异盒模型  设置语句：box-sizing: border-">
+<meta property="og:description" content="布局                           1. 盒模型宽度的计算        普通盒模型  默认盒子属性：box-sizing: content-box;  offsetWidth &#x3D; (width + padding + border)    不算margin                    怪异盒模型  设置语句：box">
 <meta property="og:locale">
 <meta property="og:image" content="http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/img/image-20210524161522345.png">
 <meta property="og:image" content="http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/img/image-20210524161747963.png">
@@ -32,31 +34,31 @@
 <meta property="article:modified_time" content="2023-03-24T13:43:46.328Z">
 <meta property="article:author" content="汪汪队">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/img/image-20210524161522345.png"><title>布局 | 汪汪队</title><link ref="canonical" href="http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
+<meta name="twitter:image" content="http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/img/image-20210524161522345.png"><title>布局 | 汪汪队</title><link ref="canonical" href="http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async="" data-pjax=""></script><script>var Stun = window.Stun || {};
 var CONFIG = {
   root: '/',
   algolia: undefined,
-  assistSearch: undefined,
+  assistSearch: ["google","bing","baidu"],
   fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
   sidebar: {"offsetTop":"20px","tocMaxDepth":6},
-  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":true},
   postWidget: {"endText":true},
   nightMode: {"enable":true},
   back2top: {"enable":true},
-  codeblock: {"style":"default","highlight":"light","wordWrap":false},
-  reward: false,
-  fancybox: false,
+  codeblock: {"style":"default","highlight":"light","wordWrap":true},
+  reward: true,
+  fancybox: true,
   zoomImage: {"gapAside":"20px"},
-  galleryWaterfall: undefined,
-  lazyload: false,
-  pjax: undefined,
+  galleryWaterfall: {"colWidth":"220px","gapX":"10px"},
+  lazyload: true,
+  pjax: {"avoidBanner":true},
   externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
-  shortcuts: undefined,
+  shortcuts: {"switchPost":true},
   prompt: {"copyButton":"Copy","copySuccess":"Copy Success","copyError":"Copy Error"},
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">主页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">档案</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">cmdmfs's blogs</div><div class="header-banner-info__subtitle">英年早睡</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">布局</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2022-12-07</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2023-03-24</span></span></div></header><div class="post-body">
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="Home"></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="archives"></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">cmdmfs's blogs</div><div class="header-banner-info__subtitle">英年早睡</div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">布局</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon" data-popover="Created Time" data-popover-pos="up"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__value">2022-12-07</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon" data-popover="Updated Time" data-popover-pos="up"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__value">2023-03-24</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/" data-flag-title="布局"><span class="post-meta-item__icon" data-popover="Visitors" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value leancloud-visitors-count"></span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/" data-flag-title="布局"><span class="post-meta-item__icon" data-popover="Visitors" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value leancloud-visitors-count"></span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon" data-popover="Visitors" data-popover-pos="up"><i class="fas fa-eye"></i></span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body">
         <h1 id="布局"   >
           <a href="#布局" class="heading-link"><i class="fas fa-link"></i></a><a href="#布局" class="headerlink" title="布局"></a>布局</h1>
       
@@ -68,7 +70,10 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
 <li><p>默认盒子属性：box-sizing: content-box;</p>
 </li>
 <li><p>offsetWidth &#x3D; (width + padding + border)    不算margin</p>
-<img src="img\image-20210524161522345.png" alt="image-20210524161522345" style="zoom:50%;" /></li>
+
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="img\image-20210524161522345.png"  alt="image-20210524161522345" style="zoom:50%;" />
+      </li>
 </ul>
 </li>
 <li><p>怪异盒模型</p>
@@ -76,7 +81,10 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
 <li><p>设置语句：box-sizing: border-box;</p>
 </li>
 <li><p>offsetWidth &#x3D; width   padding和border都挤压到内容里面</p>
-<img src="img\image-20210524161747963.png" alt="image-20210524161747963" style="zoom:50%;" /></li>
+
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="img\image-20210524161747963.png"  alt="image-20210524161747963" style="zoom:50%;" />
+      </li>
 </ul>
 </li>
 </ul>
@@ -85,7 +93,10 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
           <a href="#2-margin纵向重叠" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-margin纵向重叠" class="headerlink" title="2. margin纵向重叠"></a>2. margin纵向重叠</h2>
       <ul>
 <li><p>margin纵向重叠取重叠区最大值，不进行叠加</p>
-<img src="img\image-20210524162223533.png" alt="image-20210524162223533" style="zoom:50%;" /></li>
+
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="img\image-20210524162223533.png"  alt="image-20210524162223533" style="zoom:50%;" />
+      </li>
 </ul>
 
         <h2 id="3-margin负值问题"   >
@@ -133,7 +144,10 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
 <li><p>实现两边宽度固定，中间自适应</p>
 </li>
 <li><p>效果图</p>
-<p><img src="/img%5Cimage-20210524144236366.png" alt="image-20210524144236366"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5Cimage-20210524144236366.png"  alt="image-20210524144236366">
+      </p>
 </li>
 </ul>
 
@@ -141,24 +155,42 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
           <a href="#5-1-2-圣杯布局" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-1-2-圣杯布局" class="headerlink" title="5.1.2*圣杯布局"></a>5.1.2*圣杯布局</h4>
       <ul>
 <li><p>为了让中间盒子最先渲染，所以中间盒子放在三个盒子的第一个位置  </p>
-<p><img src="/img%5C01.png" alt="image-20210524145454648"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C01.png"  alt="image-20210524145454648">
+      </p>
 </li>
 <li><p>左中右盒子全部浮动</p>
-<p><img src="/img%5C02.png" alt="image-20210524145555488"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C02.png"  alt="image-20210524145555488">
+      </p>
 </li>
 <li><p>防止中间内容被两侧覆盖，一个用padding</p>
-<p><img src="/img%5C03.png" alt="image-20210524145631862"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C03.png"  alt="image-20210524145631862">
+      </p>
 </li>
 <li><p>两侧使用margin负值，分别放置左右两边</p>
 <ul>
 <li><p>左边margin-left: 100%</p>
-<p><img src="/img%5C04.png" alt="image-20210524145850683"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C04.png"  alt="image-20210524145850683">
+      </p>
 </li>
 <li><p>左边平移padding宽度</p>
-<p><img src="/img%5C05.png" alt="image-20210524145938264"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C05.png"  alt="image-20210524145938264">
+      </p>
 </li>
 <li><p>右边盒子margin-right : -200px     (设置成自身宽度，且是负值，平移到上一行)</p>
-<p><img src="/img%5C06.png" alt="image-20210524150130335"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C06.png"  alt="image-20210524150130335">
+      </p>
 </li>
 </ul>
 </li>
@@ -168,19 +200,34 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
           <a href="#5-13-双飞翼布局" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-13-双飞翼布局" class="headerlink" title="5.13 *双飞翼布局"></a>5.13 *双飞翼布局</h4>
       <ul>
 <li><p>中间盒子最先渲染</p>
-<p><img src="/img%5C07.png" alt="image-20210524153123511"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C07.png"  alt="image-20210524153123511">
+      </p>
 </li>
 <li><p>全部浮动</p>
-<p><img src="/img%5C08.png" alt="image-20210524153400845"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C08.png"  alt="image-20210524153400845">
+      </p>
 </li>
 <li><p>为了不让左右盒子覆盖中间盒子内部，中间盒子内部设置margin</p>
-<p><img src="/img%5C09.png" alt="image-20210524154055992"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C09.png"  alt="image-20210524154055992">
+      </p>
 </li>
 <li><p>左边盒子设置margin-left: -100%;</p>
-<p><img src="/img%5C10.png" alt="image-20210524154322827"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C10.png"  alt="image-20210524154322827">
+      </p>
 </li>
 <li><p>右边盒子设置 margin-left： -200px ；和圣杯布局设置不一样原因是圣杯布局的margin是放在同一个外层盒子中，而双飞翼布局是三个独立的盒子，右盒子是被挤下去的</p>
-<p><img src="/img%5C11.png" alt="image-20210524154628042"></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/img%5C11.png"  alt="image-20210524154628042">
+      </p>
 </li>
 </ul>
 
@@ -311,16 +358,25 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
       <ul>
 <li>改变单位，字体大小元素尺寸均可改变</li>
 </ul>
-<img src="img\image-20210525183246580.png" alt="image-20210525183246580" style="zoom:67%;" />
 
-<img src="img\image-20210525183543431.png" alt="image-20210525183543431" style="zoom:33%;" />
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="img\image-20210525183246580.png"  alt="image-20210525183246580" style="zoom:67%;" />
+      
+
+
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="img\image-20210525183543431.png"  alt="image-20210525183543431" style="zoom:33%;" />
+      
 
 
         <h3 id="9-4-rem-vw"   >
           <a href="#9-4-rem-vw" class="heading-link"><i class="fas fa-link"></i></a><a href="#9-4-rem-vw" class="headerlink" title="9.4 rem + vw"></a>9.4 rem + vw</h3>
       <ul>
 <li><p>兼容性不如前面的</p>
-<img src="img\image-20210525183851075.png" alt="image-20210525183851075" style="zoom:33%;" /></li>
+
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="img\image-20210525183851075.png"  alt="image-20210525183851075" style="zoom:33%;" />
+      </li>
 </ul>
 
         <h2 id="10-样式预处理器"   >
@@ -493,8 +549,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
 <li><p>在 font class 中，「&amp;#\x」被转义符「\」替换，因为「&amp;#\x」是 html 实体字符，只会被 html 解析，不能在 css 中被解析。</p>
 </li>
 <li><p>通过阿里iconfont 给出的 css 链接，在浏览器中直接查看该文件可以看到其定义</p>
-<p><img   src="https://user-gold-cdn.xitu.io/2019/8/21/16cb2075ee4c0e7a?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" style=""  alt="img"></p>
-<p><img   src="https://user-gold-cdn.xitu.io/2019/8/21/16cb207617607bd3?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" style=""  alt="img"></p>
+<p>
+        <img     class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://user-gold-cdn.xitu.io/2019/8/21/16cb2075ee4c0e7a?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"  style=""  alt="img">
+      </p>
+<p>
+        <img     class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://user-gold-cdn.xitu.io/2019/8/21/16cb207617607bd3?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"  style=""  alt="img">
+      </p>
 </li>
 </ul>
 </li>
@@ -507,8 +569,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
 <li><p>由于使用的是 svg 技术，属于图形，而不仅仅是字符。所以该模式支持彩色图标。</p>
 </li>
 <li><p>通过阿里 iconfont 给出的 js 链接，在浏览器中直接查看该文件可以看到其定义</p>
-<p><img   src="https://user-gold-cdn.xitu.io/2019/8/21/16cb2076088a3996?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" style=""  alt="img"></p>
-<p><img   src="https://user-gold-cdn.xitu.io/2019/8/21/16cb207634a995c4?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" style=""  alt="img"></p>
+<p>
+        <img     class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://user-gold-cdn.xitu.io/2019/8/21/16cb2076088a3996?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"  style=""  alt="img">
+      </p>
+<p>
+        <img     class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://user-gold-cdn.xitu.io/2019/8/21/16cb207634a995c4?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"  style=""  alt="img">
+      </p>
 </li>
 </ul>
 </li>
@@ -526,10 +594,13 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
 <li><p>WOFF（Web Open Font Format），WOFF字体通常比其它字体加载的要快些，使用了 OTF 和 TTF 字体里的存储结构和压缩算法。目前主流浏览器都支持该模式</p>
 </li>
 <li><p>其具体兼容性情况，我们可以通过打开 iconfont 的 Font class 链接，通过备注信息得知。</p>
-<p><img   src="https://user-gold-cdn.xitu.io/2019/8/21/16cb207617607bd3?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" style=""  alt="img"></p>
+<p>
+        <img     class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://user-gold-cdn.xitu.io/2019/8/21/16cb207617607bd3?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"  style=""  alt="img">
+      </p>
 </li>
 </ul>
-</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ END ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">Author: </span><span class="copyright-author__value"><a href="http://example.com">汪汪队</a></span></div><div class="copyright-link"><span class="copyright-link__name">Link: </span><span class="copyright-link__value"><a href="http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/">http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">Copyright: </span><span class="copyright-notice__value">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> unless stating additionally</span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E4%BA%8B%E4%BB%B6/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">事件</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2022/11/08/hello-world/"><span class="paginator-prev__text">Hello World</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%83%E5%B1%80"><span class="toc-number">1.</span> <span class="toc-text">
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ END ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">Author: </span><span class="copyright-author__value"><a href="http://example.com">汪汪队</a></span></div><div class="copyright-link"><span class="copyright-link__name">Link: </span><span class="copyright-link__value"><a href="http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/">http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">Copyright: </span><span class="copyright-notice__value">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> unless stating additionally</span></div></div><div class="post-share"><div class="social-share" data-sites="qzone, qq, weibo, wechat, douban, linkedin, facebook, twitter, google">Share to: </div></div><div class="post-reward reward"><div class="reward-button">Buy me a coffee</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img"><div class="reward-qrcode-alipay__text">Alipay</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img"><div class="reward-qrcode-wechat__text">Wechat</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E4%BA%8B%E4%BB%B6/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">事件</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2022/11/08/hello-world/"><span class="paginator-prev__text">Hello World</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="disqus_thread"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">目录</span><span class="sidebar-nav-ov">资料</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%83%E5%B1%80"><span class="toc-number">1.</span> <span class="toc-text">
           布局</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%AE%BD%E5%BA%A6%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">1.1.</span> <span class="toc-text">
           1. 盒模型宽度的计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-margin%E7%BA%B5%E5%90%91%E9%87%8D%E5%8F%A0"><span class="toc-number">1.2.</span> <span class="toc-text">
           2. margin纵向重叠</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-margin%E8%B4%9F%E5%80%BC%E9%97%AE%E9%A2%98"><span class="toc-number">1.3.</span> <span class="toc-text">
@@ -571,4 +642,118 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
           Font Awesome</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-3-I-confont-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E7%9F%A2%E9%87%8F%E5%9B%BE%E6%A0%87%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.11.3.</span> <span class="toc-text">
           11.3  I confont-阿里巴巴矢量图标库的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%98%BF%E9%87%8C%E5%9B%BE%E6%A0%87%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.11.3.0.1.</span> <span class="toc-text">
           阿里图标三种模式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%8D%E5%90%8C%E6%96%87%E4%BB%B6%E5%90%8E%E7%BC%80%E7%9A%84%E5%90%AB%E4%B9%89"><span class="toc-number">1.11.3.0.2.</span> <span class="toc-text">
-          不同文件后缀的含义</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">汪汪队立大功</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">Archives</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2023</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>汪汪队</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v6.3.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script></body></html>
+          不同文件后缀的含义</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/avatar.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">一只睡觉的猫</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://plus.google.com/" target="_blank" rel="noopener" data-popover="Google" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-google"></i></span></a><a class="sidebar-ov-social-item" href="https://twitter.com/" target="_blank" rel="noopener" data-popover="Twitter" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-twitter"></i></span></a><a class="sidebar-ov-social-item" href="https://youtube.com/" target="_blank" rel="noopener" data-popover="Youtube" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-youtube"></i></span></a></div><div class="sidebar-ov-feed"></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="archives"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">档案</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2023</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>汪汪队</span><span class="footer__devider">|</span><span></span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v6.3.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="Unique Visitor"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon" data-popover-pos="up" data-popover="Page View"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div><div></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/ribbon.js@latest/dist/ribbon.min.js" size="120" alpha="0.6" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="0,0,0" opacity="0.6" count="99" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
+  var pjax = new Pjax({"selectors":["head title","#main",".pjax-reload",".header-banner"],"history":true,"scrollTo":true,"scrollRestoration":true,"cacheBust":true,"debug":true,"currentUrlFullReload":true,"timeout":0});
+  // 加载进度条的计时器
+  var loadingTimer = null;
+
+  // 重置页面 Y 方向上的滚动偏移量
+  document.addEventListener('pjax:send', function () {
+    $('.header-nav-menu').removeClass('show');
+    if (CONFIG.pjax && CONFIG.pjax.avoidBanner) {
+      $('html').velocity('scroll', {
+        duration: 500,
+        offset: $('#header').height(),
+        easing: 'easeInOutCubic'
+      });
+    }
+
+    var loadingBarWidth = 20;
+    var MAX_LOADING_WIDTH = 95;
+
+    $('.loading-bar').addClass('loading');
+    $('.loading-bar__progress').css('width', loadingBarWidth + '%');
+    clearInterval(loadingTimer);
+    loadingTimer = setInterval(function () {
+      loadingBarWidth += 3;
+      if (loadingBarWidth > MAX_LOADING_WIDTH) {
+        loadingBarWidth = MAX_LOADING_WIDTH;
+      }
+      $('.loading-bar__progress').css('width', loadingBarWidth + '%');
+    }, 500);
+  }, false);
+
+  window.addEventListener('pjax:complete', function () {
+    clearInterval(loadingTimer);
+    $('.loading-bar__progress').css('width', '100%');
+    $('.loading-bar').removeClass('loading');
+    setTimeout(function () {
+      $('.loading-bar__progress').css('width', '0');
+    }, 400);
+    $('link[rel=prefetch], script[data-pjax-rm]').each(function () {
+      $(this).remove();
+    });
+    $('script[data-pjax], #pjax-reload script').each(function () {
+      $(this).parent().append($(this).remove());
+    });
+
+    if (Stun.utils.pjaxReloadBoot) {
+      Stun.utils.pjaxReloadBoot();
+    }
+    if (Stun.utils.pjaxReloadScroll) {
+      Stun.utils.pjaxReloadScroll();
+    }
+    if (Stun.utils.pjaxReloadSidebar) {
+      Stun.utils.pjaxReloadSidebar();
+    }
+    if (false) {
+      if (Stun.utils.pjaxReloadHeader) {
+        Stun.utils.pjaxReloadHeader();
+      }
+      if (Stun.utils.pjaxReloadScrollIcon) {
+        Stun.utils.pjaxReloadScrollIcon();
+      }
+      if (Stun.utils.pjaxReloadLocalSearch) {
+        Stun.utils.pjaxReloadLocalSearch();
+      }
+    }
+  }, false);
+}, false);</script><div id="pjax-reload"><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" rel="stylesheet" type="text/css"><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.css" rel="stylesheet" type="text/css"><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/quicklink@1.0.1/dist/quicklink.umd.js"></script><script>function initQuicklink() {
+  quicklink({
+    timeout: '10000',
+    priority: true,
+    ignores: [uri => uri.includes('#'), uri => uri === 'http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/', /\/api\/?/,uri => uri.includes('.xml'),uri => uri.includes('.zip'),(uri, el) => el.hasAttribute('nofollow'),(uri, el) => el.hasAttribute('noprefetch')]
+  });
+}
+
+if (true || false) {
+  initQuicklink();
+} else {
+  window.addEventListener('DOMContentLoaded', initQuicklink, false);
+}</script><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script></div><script data-pjax="">function loadDisqus () {
+  if (!document.getElementById('disqus_thread')) {
+    return;
+  }
+  if (window.DISQUS) {
+    DISQUS.reset({
+      reload: true,
+      config: function () {
+        this.page.url = 'http://example.com/2022/12/07/01_%E5%B8%83%E5%B1%80%E4%B8%8E%E4%BA%8B%E4%BB%B6/%E5%B8%83%E5%B1%80/';
+        this.page.identifier = '2022/12/07/01_布局与事件/布局/';
+        this.page.title = '布局';
+      }
+    });
+  } else {
+    var d = document;
+    var sc = d.createElement('script');
+    var se = d.createElement('script');
+
+    if (true) {
+      sc.src = 'https://.disqus.com/count.js';
+      sc.id = 'dsq-count-scr';
+      sc.async = true;
+      if (true) {
+        sc.setAttribute('data-pjax', '');
+      }
+      (d.head || d.body).appendChild(sc);
+    }
+    se.src = 'https://.disqus.com/embed.js';
+    (d.head || d.body).appendChild(se);
+  }
+}
+
+if (true) {
+  loadDisqus();
+} else {
+  window.addEventListener('DOMContentLoaded', loadDisqus, false);
+}</script><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script></body></html>
